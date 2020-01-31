@@ -7,6 +7,8 @@ This repository contains microservices for CoffeeShop microservices including:
 ![alt hld](coffee_shop-hld-1.png)
 # API Documentation
 `https://app.swaggerhub.com/apis/vietnq68/API/1.0.0`
+[API Documentation](https://app.swaggerhub.com/apis/vietnq68/API/1.0.0)
+
 # How to test
 1. Using docker-compose to start db and microservices
 ```
