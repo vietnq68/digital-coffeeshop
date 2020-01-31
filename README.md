@@ -1,5 +1,5 @@
 # CoffeeShop microservices
-This repository contains microservices for CoffeeShop microservices including:
+This repository contains microservices for CoffeeShop project including:
 - digital-api-gateway: API routing and authentication based on Springboot and Zuul
 - digital-userservice: User management, OAuth provider, ... based on Springboot
 - digital-orderservice: Handle coffeeshop business logic Order, Product, Shop management, ... based on Springboot
