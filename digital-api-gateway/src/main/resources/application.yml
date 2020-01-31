@@ -1,0 +1,13 @@
+server:
+  port: 8090
+zuul:
+  routes:
+    oauth:
+      path: /api/oauth/**
+      url: http://digital-userservice:8082/userservice/api/oauth
+    users:
+      path: /api/users/**
+      url: http://digital-userservice:8082/userservice/api/users
+    orders:
+      path: /api/orders/**
+      url: http://digital-orderservice:8083/orderservice/api/orders

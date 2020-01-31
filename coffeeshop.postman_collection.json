@@ -1,0 +1,116 @@
+{
+	"id": "690104da-f37f-c319-1035-749932ec7fd9",
+	"name": "coffeeshop",
+	"description": "",
+	"order": [
+		"9ce7b3c7-fee2-4115-2e9d-6c8f4c6903bd",
+		"3e338706-7598-529c-2ad6-c99cef82c2bb",
+		"bf2e3367-ed8b-9169-ae2e-d6f094f91e2a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1579595244324,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3e338706-7598-529c-2ad6-c99cef82c2bb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8090/api/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1580480278131,
+			"name": "request token",
+			"description": "",
+			"collectionId": "690104da-f37f-c319-1035-749932ec7fd9",
+			"responses": [],
+			"rawModeData": "{\n\t\"mobileNumber\":\"0936406987\",\n\t\"password\":\"123456\"\n}"
+		},
+		{
+			"id": "9ce7b3c7-fee2-4115-2e9d-6c8f4c6903bd",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyYTNmZDBjZC1mZTVjLTQ5MmQtYTk0Ny00MGE1YjBmMWVhNmUiLCJpYXQiOjE1Nzk2NzU3MTAsInN1YiI6IjA5MzY0MDY5ODciLCJpc3MiOiIxMDFkaWdpdGFsIiwiZXhwIjoxNTc5Njc5MzEwfQ.HfrVyiYBlxt07VDEiCSXsbG5x8vGgoRU5552VdToG6s\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyYTNmZDBjZC1mZTVjLTQ5MmQtYTk0Ny00MGE1YjBmMWVhNmUiLCJpYXQiOjE1Nzk2NzU3MTAsInN1YiI6IjA5MzY0MDY5ODciLCJpc3MiOiIxMDFkaWdpdGFsIiwiZXhwIjoxNTc5Njc5MzEwfQ.HfrVyiYBlxt07VDEiCSXsbG5x8vGgoRU5552VdToG6s",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8090/api/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1580480280912,
+			"name": "create user",
+			"description": "",
+			"collectionId": "690104da-f37f-c319-1035-749932ec7fd9",
+			"responses": [],
+			"rawModeData": "{\n\t\"mobileNumber\":\"0912345678\",\n\t\"password\":\"123456\"\n}"
+		},
+		{
+			"id": "bf2e3367-ed8b-9169-ae2e-d6f094f91e2a",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YTQ2OGRmNi1kMTVlLTQ1MDAtYWQ0YS1iYWJkN2NlZWFiNDAiLCJpYXQiOjE1ODA0ODAyNTMsInN1YiI6IjA5MzY0MDY5ODciLCJpc3MiOiIxMDFkaWdpdGFsIiwiZXhwIjoxNTgwNDgzODUzfQ.gHo29U-iDYCjyvJGO8Tc0rRLQl2i7DSEdQLTNWJJ2-M\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5YTQ2OGRmNi1kMTVlLTQ1MDAtYWQ0YS1iYWJkN2NlZWFiNDAiLCJpYXQiOjE1ODA0ODAyNTMsInN1YiI6IjA5MzY0MDY5ODciLCJpc3MiOiIxMDFkaWdpdGFsIiwiZXhwIjoxNTgwNDgzODUzfQ.gHo29U-iDYCjyvJGO8Tc0rRLQl2i7DSEdQLTNWJJ2-M",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8090/api/orders",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1580480275731,
+			"name": "Place Order",
+			"description": "",
+			"collectionId": "690104da-f37f-c319-1035-749932ec7fd9",
+			"responses": [],
+			"rawModeData": "{\n\t\"productId\":1,\n\t\"shopId\":1,\n\t\"customerId\":1\n}"
+		}
+	]
+}

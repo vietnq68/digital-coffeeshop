@@ -1,0 +1,30 @@
+version: '2.0'
+services:
+  digital-db:
+   image: quocvi3t/digital-db:1.0
+   container_name: digital-db
+   restart: always
+   ports:
+   - '5436:5432'
+
+  digital-api-gateway:
+    image: quocvi3t/digital-api-gateway:1.0
+    container_name: digital-api-gateway
+    ports:
+    - '8090:8090'
+
+  digital-userservice:
+    image: quocvi3t/digital-userservice:1.0
+    container_name: digital-userservice
+    ports:
+    - '8082:8082'
+    depends_on:
+    - 'digital-db'
+
+  digital-orderservice:
+    image: quocvi3t/digital-orderservice:1.0
+    container_name: digital-orderservice
+    ports:
+    - '8083:8083'
+    depends_on:
+    - 'digital-db'
